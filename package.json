@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  },
+  "name": "mern-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front":"cd front-end && npm start",
+    "back":"cd back-end && nodemon server",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amdounislim/-Mern-App-Mehdi-F2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amdounislim/-Mern-App-Mehdi-F2/issues"
+  },
+  "homepage": "https://github.com/Amdounislim/-Mern-App-Mehdi-F2#readme",
+  "description": ""
+}

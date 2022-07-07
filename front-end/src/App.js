@@ -6,6 +6,7 @@ import AddUser from './components/AddUser';
 import UserCard from './components/UserCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUsers } from './JS/actions/actionUser';
+import EditUser from './components/EditUser';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           {users.map((el, index) => <UserCard user={el} key={el._id} />)}
         </div>} />
         <Route path='/add_user' element={<AddUser />} />
+        <Route path='/edit_user' element={<EditUser />} />
       </Routes>
     </div>
   );
